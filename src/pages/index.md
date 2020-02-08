@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Discussions on Tech and Programming
-image: /img/home-jumbotron.jpg
+image: /img/javascript_frameworks.jpg
 heading: Blog.TalkingDev
 subheading: Javascript Frameworks, Web Applications, Devtools and More...
 mainpitch:
