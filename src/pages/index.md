@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Discussions on Tech and Programming
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Blog.TalkingDev
+subheading: Javascript Frameworks, Web Applications, Devtools and More...
 mainpitch:
   title: Why Kaldi
   description: >
