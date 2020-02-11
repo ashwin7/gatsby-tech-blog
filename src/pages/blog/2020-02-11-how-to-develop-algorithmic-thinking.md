@@ -21,7 +21,7 @@ The skill is in being able to translate a process into code and that comes from 
 
 Find a problem - work out all the steps to solve that problem (literally just: Get trousers out of drawer, put left leg in, etc...). If you see any steps you can skip out or optimise (I keep my clothes out on chair the night before) then do that. Follow your own instructions.. are you dressed? Then you have a successful algorithm!
 
-Now hot to do that with code?
+Now how to do that with code?
 
 1. Break the problem down into small steps in pseudo code
 2. Implement it in actual code.
