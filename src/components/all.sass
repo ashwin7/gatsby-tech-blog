@@ -42,7 +42,7 @@ pre[class*="language-javascript"]
 // Helper Classes
 .full-width-image-container
   width: 100vw
-  height: 400px
+  height: 250px
   position: relative
   left: 50%
   right: 50%
@@ -55,7 +55,7 @@ pre[class*="language-javascript"]
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 250px
     background-size: cover
     background-position: bottom
     display: flex
@@ -124,8 +124,12 @@ $menu-label-color: $white-ter
     display: inline
 
 // blog roll
+.blog-list-item
+  &:hover
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #f4f4f4;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
