@@ -6,9 +6,7 @@ description: I get asked this question a lot. So here are few points I like to d
 featuredpost: false
 featuredimage: /img/0_2FNo1Wxk0kZX0QoH.png
 tags:
-  - Frameworks
-  - Angular
-  - React
+  - Programming
 ---
 Disclaimer: I've used both Angular and React extensively.
 

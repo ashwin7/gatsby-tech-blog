@@ -7,9 +7,7 @@ description: |
 featuredpost: true
 featuredimage: /img/list.png
 tags:
-  - Tutorial
-  - Javascript
-  - Coding
+  - Programming
 ---
 This is a very common interview question and surprisingly many frontend developers (including the ones I have interviewed in past ), don't know the proper answer.
 

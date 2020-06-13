@@ -6,8 +6,7 @@ description: Array.prototype.filter() - "I chose you"
 featuredpost: true
 featuredimage: /img/jslogo.jpg
 tags:
-  - Javascript
-  - Tutorial
+  - Programming
 ---
 In this article series we are going to look at few of the Array and Object methods of Javascript which are not only bit obscure for novice developers but even advance developers sometimes are not aware of these. To be honest you probably know some of these, but knowing them WILL make you a more efficient, better , well rounded developer.
 

@@ -5,7 +5,9 @@
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
+$theme-blue: #035aa6
+
+$primary: $theme-blue
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
@@ -95,6 +97,12 @@ footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
+
+//Link overrides
+.notification
+  a.title
+    text-decoration: none!important; 
+
 //Menu overrides
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
@@ -137,6 +145,45 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+// Tag Page
+
+.tagList.container
+  display: flex;
+  flex-flow: row wrap;
+.cardTag
+  display: block;
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+  position: relative;
+  padding: 10px 15px;
+  .tagCard
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 100%;
+    color: rgba(0,0,0,.65);
+    box-sizing: border-box;
+    touch-action: manipulation;
+    padding: 10px 15px;
+    .content-box
+      margin-top: 20px;
+      border-radius: 20px;
+      height: 100%;
+      box-shadow: -1px 4px 9px 3px hsla(0,0%,65.5%,.22);
+      color: rgba(0,0,0,.65);
+      p
+        padding: 20px;
+      .content-image
+        width: 100%;
+        height: 224px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 20px 20px 0 0;
+        background-size: cover;
+      .content-header
+        text-align: center;
+        color: rgb(67, 172, 224);
+        font-size: 1.8rem;
+        margin-top: 20px;
 
 @import "~bulma"
 

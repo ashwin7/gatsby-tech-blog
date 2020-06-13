@@ -3,6 +3,9 @@ import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/Layout'
+import Pricing from '../../components/Pricing'
+import Tag from '../../components/Tag'
+import DESC from './tagDesc'
 
 const TagsPage = ({
   data: {
@@ -24,11 +27,7 @@ const TagsPage = ({
             <h1 className="title is-size-2 is-bold-light">Tags</h1>
             <ul className="taglist">
               {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                  </Link>
-                </li>
+                <Tag title={tag.fieldValue} count={tag.totalCount} desc={DESC[tag.fieldValue]} link={`/tags/${kebabCase(tag.fieldValue)}`} className={tag.fieldValue + '-tag'}></Tag>
               ))}
             </ul>
           </div>

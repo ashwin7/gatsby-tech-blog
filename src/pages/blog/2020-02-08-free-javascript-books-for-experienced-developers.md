@@ -6,10 +6,7 @@ description: Because free knowledge is the best knowledge
 featuredpost: true
 featuredimage: /img/books-stack.jpg
 tags:
-  - Javascript
   - Books
-  - Reading
-  - Recommendation
 ---
 There are a wealth of materials available online or to download to guide a professional through the different levels and aspects of JavaScript. Here are a few books which can be very useful in providing quick tips and pointers. They are designed to engage mostly advanced programmers.
 

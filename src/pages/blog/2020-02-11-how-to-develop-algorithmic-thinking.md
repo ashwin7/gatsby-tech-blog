@@ -9,9 +9,7 @@ description: >-
 featuredpost: true
 featuredimage: /img/algo.png
 tags:
-  - Coding
-  - Tutorial
-  - Algorithms
+  - Programming
 ---
 All of us are running algorithms all day long. We just don't think of it like that.
 

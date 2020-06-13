@@ -6,8 +6,7 @@ description: Array.prototype.map() - "Change one by one"
 featuredpost: true
 featuredimage: /img/jslogo.png
 tags:
-  - Javascript
-  - Tutorial
+  - Programming
 ---
 We are in part 2 of he article series which also means that I've not procrastinated enough yet to ultimately scrap this article series (like I do with most projects).
 In part one, we saw usage of <a href="/javascript-array-methods-filter-p1/" >_.filter()_</a>

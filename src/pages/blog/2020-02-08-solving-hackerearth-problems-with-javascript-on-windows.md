@@ -6,8 +6,7 @@ description: Because nothing wrong in using Windows for Dev
 featuredpost: true
 featuredimage: /img/photo-js-cover.jpg
 tags:
-  - Javascript
-  - Tips
+  - Programming
 ---
 HackerEarth is one of the leading coding contest and challanges tool used by some of the major tech giants to recruit talent in India and abroad.
 Basically heackerearth provides coding puzzles to programmers which they need to solve in limited time which can lead to some prizes and/or interviews with an organization.

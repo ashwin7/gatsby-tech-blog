@@ -9,7 +9,7 @@ description: >-
 featuredpost: true
 featuredimage: /img/logo-icon.png
 tags:
-  - Javascript
+  - Programming
 ---
 UI application frameworks help in reducing the amount of effort required to get a complex web application up and running. They prevent us from reinventing the wheel, being able to rely on well tested reusable code is neat.
 

@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Discussions on Tech and Programming
+title: Ashwin's Blog
 image: /img/javascript_frameworks.jpg
 heading: Blog.TalkingDev
-subheading: Javascript Frameworks, Web Applications, Devtools and More...
+subheading: My thoughts on Programming, Books, Investing, Life and more...
 mainpitch:
   title: Why Kaldi
   description: >

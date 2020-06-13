@@ -11,9 +11,7 @@ description: >-
 featuredpost: true
 featuredimage: /img/a4cfe5641b9b.jpg
 tags:
-  - Javascript
-  - ES2020
-  - Tutorial
+  - Programming
 ---
 JavaScript 2020 adds some much anticipated features.
 
