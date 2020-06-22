@@ -27,3 +27,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/pages/blog/what-s-the-difference-between-dependencies-and-dev-dependencies.md
