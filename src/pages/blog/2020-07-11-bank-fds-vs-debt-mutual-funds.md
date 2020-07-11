@@ -10,7 +10,7 @@ tags:
 ---
 I've friends who prefer Bank FDs. But in the falling interest rate market like India, bank FDs make no sense.
 
-Please read my other article on purpose of investment here:
+Please read my other article on purpose of investment here:https://blog.talkingdev.com/blog/2020-06-19-the-true-purpose-of-investing-beating-the-inflation/
 
 Let us discuss why Bank FDs are a bad idea looking at historical data.
 
