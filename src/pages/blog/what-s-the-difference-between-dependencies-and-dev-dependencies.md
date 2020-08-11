@@ -11,7 +11,7 @@ tags:
 
 ---
 First let's look at a sample package.json file
-
+```Javascript
     {
       "name": "test-project",
       "version": "1.0.0",
@@ -46,6 +46,7 @@ First let's look at a sample package.json file
         "not ie <= 8"
       ]
     }
+```
 
 If you look at the above file you will see two types of dependencies listed :
 
