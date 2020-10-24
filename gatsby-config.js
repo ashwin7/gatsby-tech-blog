@@ -5,6 +5,7 @@ module.exports = {
       'TalkingDev Tech Blog. JavaScript, Angular, React, CSS3, Material, Bootstrap, Svelte, Vue and everything Frontend.',
   },
   plugins: [
+    'gatsby-plugin-twitter',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
