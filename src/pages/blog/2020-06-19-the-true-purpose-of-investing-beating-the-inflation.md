@@ -5,7 +5,7 @@ date: 2020-06-19T06:58:32.982+00:00
 description: 'Investing isn''t a get rich scheme. The point is to beat inflation.
   You can earn ₹10 by investing ₹100 vs investing ₹10. '
 featuredpost: true
-featuredimage: "/img/Investing-tag.png"
+featuredimage: /img/Investing-tag.png
 tags:
 - Investing
 

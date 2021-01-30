@@ -5,7 +5,7 @@ date: 2020-06-22T15:14:00Z
 description: 'There''s some major confusion around what are Dependencies are Dev Dependencies
   in a NPM package.json file. Let''s try to demystify that. '
 featuredpost: true
-featuredimage: static/img/packagejson.png
+featuredimage: /img/packagejson.png
 tags:
 - Programming
 

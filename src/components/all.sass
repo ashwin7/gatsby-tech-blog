@@ -156,6 +156,9 @@ $menu-label-color: $white-ter
   max-width: 33.33333333%;
   position: relative;
   padding: 10px 15px;
+  @media (max-width: 968px)
+    flex: 0 0 100%;
+    max-width: 100%;
   .tagCard
     margin-top: 20px;
     border-radius: 20px;
@@ -164,7 +167,7 @@ $menu-label-color: $white-ter
     box-sizing: border-box;
     touch-action: manipulation;
     padding: 10px 15px;
-    .content-box
+    .content-box     
       margin-top: 20px;
       border-radius: 20px;
       height: 100%;

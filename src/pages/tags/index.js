@@ -9,7 +9,10 @@ import Tag from '../../components/Tag'
 const DESC = {
   'Programming': 'We are all apprentices in a craft where no one ever becomes a master. Read my little nuggets of programming knowledge I\'ve learnt over the years.',
   'Books': 'It is books that are the key to the wide world; if you can’t do anything else, read all that you can. Here are few book recommendations from me.',
-  'Investing': 'My Ideas about investing. How to get the most out of money- Save Money, Save Tax, Spend Wisely and Invest. Plan better.'
+  'Investing': 'My Ideas about investing. How to get the most out of money- Save Money, Save Tax, Spend Wisely and Invest. Plan better.',
+  'Opinions': 'He who has no opinion of his own, but depends upon the opinion and taste of others, is a slave. Here I write my opinions on all things that matter to me.',
+  'Gadgets': 'My reviews on gadgets I own. Also my ramblings on gadgets I wish to own someday or gadgets hwich I think are utterly useless. Read it all here.',
+  'Tweets': 'A collection of offbeat tweets I post from time to time. Some evergreen, some not. Funny, insightful and sometimes meaningless.'
 }
 
 const TagsPage = ({

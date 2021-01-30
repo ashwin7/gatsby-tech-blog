@@ -9,7 +9,7 @@ description: >-
   The latest features of ES2020 are available for use and I thought I'd discuss
   my favourite ones.
 featuredpost: true
-featuredimage: /img/a4cfe5641b9b.jpg
+featuredimage: /img/javascript-tag.png
 tags:
   - Programming
 ---
