@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
@@ -15,7 +16,10 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  let disqusConfig = {
+    identifier: `${title}-${tags[0]}`,
+    title: title,
+  }
   return (
     <section className="section">
       {helmet || ''}
@@ -39,6 +43,9 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            <CommentCount config={disqusConfig} placeholder={'...'} />
+            <Disqus config={disqusConfig} />
+
           </div>
         </div>
       </div>
