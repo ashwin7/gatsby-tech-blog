@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Can a single developer make Facebook or Instagram?'
+title: 'Can a single person make Facebook or Instagram?'
 date: 2021-01-31T12:45:39.745Z
 description: Short answer is No and Yes.
 featuredpost: true
@@ -10,7 +10,7 @@ tags:
 ---
 It depends on what do you mean?
 Do you mean the Facebook/Instagram application?
-Then yes. There are a gazillion tutorials on the internet which will teach you how to do develop a facebook / instagram or twitter clone. And you can pretty much create a 1:1 feature app in less than a month. The problem isn't that one developer can create these or not, the problem is a single developer can't market his app so the whole world starts using it. Basically you'll write the program, and nobody will use it.
+Then yes. There are a gazillion tutorials on the internet which will teach you how to develop a facebook / instagram or twitter clone. And you can pretty much create a 1:1 feature app in less than a month. The problem isn't that one developer can create these or not, the problem is a single developer can't market his app so the whole world starts using it. Basically you'll write the program, and nobody will use it.
 
 You need marketing people to convince the world that they need your product or service.. That's why marketing is every bit as important as development is at companies like Instagram etc. One might even say it's more important. Any half decent programmer can write Twitter, it's completely trivial compared writing something like PhotoShop or Final Cut Pro.
 
