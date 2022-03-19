@@ -1,19 +1,8 @@
-import React from 'react'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
-import Layout from '../../components/Layout'
-import Pricing from '../../components/Pricing'
-import Tag from '../../components/Tag'
-
-const DESC = {
-  'Programming': 'We are all apprentices in a craft where no one ever becomes a master. Read my little nuggets of programming knowledge I\'ve learnt over the years.',
-  'Books': 'It is books that are the key to the wide world; if you can’t do anything else, read all that you can. Here are few book recommendations from me.',
-  'Investing': 'My Ideas about investing. How to get the most out of money- Save Money, Save Tax, Spend Wisely and Invest. Plan better.',
-  'Opinions': 'He who has no opinion of his own, but depends upon the opinion and taste of others, is a slave. Here I write my opinions on all things that matter to me.',
-  'Gadgets': 'My reviews on gadgets I own. Also my ramblings on gadgets I wish to own someday or gadgets hwich I think are utterly useless. Read it all here.',
-  'Tweets': 'A collection of offbeat tweets I post from time to time. Some evergreen, some not. Funny, insightful and sometimes meaningless.'
-}
+import * as React from "react";
+import { kebabCase } from "lodash";
+import { Helmet } from "react-helmet";
+import { Link, graphql } from "gatsby";
+import Layout from "../../components/Layout";
 
 const TagsPage = ({
   data: {
@@ -30,12 +19,16 @@ const TagsPage = ({
         <div className="columns">
           <div
             className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
+            style={{ marginBottom: "6rem" }}
           >
-            <h1 className="title is-size-2 is-bold-light">Topics</h1>
+            <h1 className="title is-size-2 is-bold-light">Tags</h1>
             <ul className="taglist">
-              {group.map(tag => (
-                <Tag title={tag.fieldValue} count={tag.totalCount} desc={DESC[tag.fieldValue]} link={`/tags/${kebabCase(tag.fieldValue)}`} className={tag.fieldValue + '-tag'}></Tag>
+              {group.map((tag) => (
+                <li key={tag.fieldValue}>
+                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    {tag.fieldValue} ({tag.totalCount})
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -43,9 +36,9 @@ const TagsPage = ({
       </div>
     </section>
   </Layout>
-)
+);
 
-export default TagsPage
+export default TagsPage;
 
 export const tagPageQuery = graphql`
   query TagsQuery {
@@ -61,4 +54,4 @@ export const tagPageQuery = graphql`
       }
     }
   }
-`
+`;
