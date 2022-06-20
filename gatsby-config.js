@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "TalkingDev - A blog on software engineering and programming",
+    title: "TalkingDev - Programming, Tech and Finance",
     description:
       "On TalkingDev blog, Ashwin Saxena writes about his experiments with technology and his experiences as a software engineer. Occasionally some financial knowledge too.",
   },
