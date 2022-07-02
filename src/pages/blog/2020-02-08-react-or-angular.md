@@ -10,12 +10,10 @@ tags:
 ---
 Disclaimer: I've used both Angular and React extensively.
 
-I prefer React primarily because I like JSX syntax. It's less files I have to manage (HTML, JS, CSS), and makes it easier for me to manage event handlers. Angular is fine too, I've used it for work before, but it took time to get used to it, though that might have been because of RxJS. 
+I prefer React primarily because I like JSX syntax. It's fewer files I have to manage (HTML, JS, CSS), and makes it easier for me to manage event handlers. Angular is fine too, I've used it for work before, but it took time to get used to it, though that might have been because of RxJS. 
 
-Though both React and Angular address the same area at a high level, the choice to pick one really depends on what you're building, what your timeline is, what your team is etc.
+Though both React and Angular address the same area at a high level, the choice to pick one depends on what you're building, what your timeline is, what your team is, etc.
 
-React is a library while Angular is a framework. Frameworks are fully functional out of the box, but are not as flexible as Libraries which are highly flexible but prone to entropy more. Now, if you were to compare a React*Framework*(NextJS/Gatsby/CRA) and Angular, it's of a more apples to apples scenario.
+React is a library while Angular is a framework. Frameworks are fully functional out of the box but are not as flexible as Libraries which are highly flexible but prone to entropy. Now, if you were to compare a React*Framework*(NextJS/Gatsby/CRA) and Angular, it's of a more apples-to-apples scenario.
 
-Even there, most apps can be developed using either so if your team is well versed in Angular, then the choice is easy - Angular. Same for React. Learning curve for Angular is slightly more IMO, but that's subjective. There's a lot more aspects but these are the main ones I think matter.
-
-Bottom-line: Use either depending on product and what team you have. It doesn't matter which one you chose n grand scheme of things.
+Even there, most apps can be developed using either so if your team is well versed in Angular, then the choice is easy - Angular. Same for React. The learning curve for Angular is slightly more IMO, but that's subjective. There are a lot more aspects but these are the main ones I think matter. Bottom line: Use either depending on the product and what team you have. It doesn't matter which one you chose in the grand scheme of things.
