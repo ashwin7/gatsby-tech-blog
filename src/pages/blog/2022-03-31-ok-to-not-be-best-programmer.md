@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'It is Ok to not be the best programmer'
 date: 2022-03-31T12:45:39.745Z
 description: I'm not the best programmer. Like not even close. But I'm a pretty good software engineer. In fact, I recently got promoted.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Opinions-tag.png
 tags:
   - Opinions

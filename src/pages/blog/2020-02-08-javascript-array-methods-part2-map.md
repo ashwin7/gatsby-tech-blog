@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Javascript Array Methods - Part2 - map
 date: 2020-02-08T20:38:29.599Z
 description: Array.prototype.map() - "Change one by one"
-featuredpost: true
+featuredpost: false
 featuredimage: /img/jslogo.png
 tags:
   - Programming

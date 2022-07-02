@@ -3,7 +3,7 @@ templateKey: blog-post
 title: '10 lessons from my 10 years of career'
 date: 2022-03-13T12:45:39.745Z
 description: back to blogging and 10 lessons from my 10 years of career so far.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Opinions-tag.png
 tags:
   - Opinions

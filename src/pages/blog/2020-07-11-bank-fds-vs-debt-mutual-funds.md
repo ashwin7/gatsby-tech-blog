@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Bank FDs VS Debt Mutual Funds
 date: 2020-07-11T03:18:17.294Z
 description: Why bank FDs are a bad idea for long term wealth creation.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Investing-tag.png
 tags:
   - Investing

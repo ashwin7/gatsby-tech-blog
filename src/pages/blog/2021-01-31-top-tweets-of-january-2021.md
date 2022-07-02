@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Top Tweets of January 2021'
 date: 2021-01-31T12:45:39.745Z
 description: Here's a quick recap of my top tweets for January 2021
-featuredpost: true
+featuredpost: false
 featuredimage: /img/images.jpg
 tags:
   - Tweets

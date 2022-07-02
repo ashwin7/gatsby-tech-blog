@@ -4,7 +4,7 @@ title: Displaying a million records efficiently - Virtual Scroll
 date: 2020-02-13T17:52:11.456Z
 description: |
   How'd you display a million records on screen without affecting performance?
-featuredpost: true
+featuredpost: false
 featuredimage: /img/list.png
 tags:
   - Programming

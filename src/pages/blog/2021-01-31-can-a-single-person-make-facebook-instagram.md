@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Can a single person make Facebook or Instagram?'
 date: 2021-01-31T12:45:39.745Z
 description: Short answer is No and Yes.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Opinions-tag.png
 tags:
   - Opinions

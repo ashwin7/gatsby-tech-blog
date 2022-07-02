@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Stories code tells us'
 date: 2022-06-20T12:45:39.745Z
 description: As your code evolves, it starts to tell a story
-featuredpost: true
+featuredpost: false
 featuredimage: /img/Opinions-tag.png
 tags:
   - Opinions

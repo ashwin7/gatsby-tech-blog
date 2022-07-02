@@ -8,7 +8,7 @@ description: >-
   every year and it's upto browsers/Javascript engines to implement new feature.
   The latest features of ES2020 are available for use and I thought I'd discuss
   my favourite ones.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/javascript-tag.png
 tags:
   - Programming

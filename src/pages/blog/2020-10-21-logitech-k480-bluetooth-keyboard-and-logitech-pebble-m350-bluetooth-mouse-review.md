@@ -7,7 +7,7 @@ date: 2020-10-21T18:21:15.820Z
 description: >-
   If you are looking for a keayboard - mouse combo which works with almost any
   device you have, look no further.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/394129D4-8457-4D0F-B3E1-40E4ABFD7802.jpeg
 tags:
   - Gadgets

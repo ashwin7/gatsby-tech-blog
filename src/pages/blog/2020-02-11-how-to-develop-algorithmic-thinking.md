@@ -6,7 +6,7 @@ description: >-
   I've been asked by many of my peers that even though they are good at general
   coding, they just can't seem to develop algorithmic thinking process. We
   discuss how to improve your problem solving skills in programming.
-featuredpost: true
+featuredpost: false
 featuredimage: /img/algo.png
 tags:
   - Programming
