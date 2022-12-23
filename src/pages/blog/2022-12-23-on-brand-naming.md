@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Naming brands, creating identity
-date: 2022-10-05T12:13:25.918Z
+date: 2022-12-23T12:13:25.918Z
 description: Notes from interview of David Placek
 featuredpost: true
 featuredimage: /img/brand.jpg
