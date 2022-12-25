@@ -8,7 +8,7 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const postTitle = children.props.title === "Ashwin's Blog" ? title : children.props.title;
+  const postTitle = children?.props?.title !== "Ashwin's Blog" ? children.props.title : title;
   return (
     <div>
       <Helmet>
