@@ -8,6 +8,7 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
+  const postTitle = children.props.title === "Ashwin's Blog" ? title : children.props.title;
   return (
     <div>
       <Helmet>
@@ -41,7 +42,7 @@ const TemplateWrapper = ({ children }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={postTitle} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
