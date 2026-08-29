@@ -1,135 +1,197 @@
-# Gatsby + Netlify CMS Starter
+# Chirping Astro Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+A minimal starter template for [Chirping Astro](https://github.com/kannansuresh/chirping-astro) — a Chirpy-inspired, multilingual **Astro v7** blog theme with **Tailwind CSS v4**, **daisyUI v5**, **Pagefind** search, **Giscus** comments, **Mermaid** diagrams, and **KaTeX** math.
 
-**Note:** This starter uses [Gatsby v4](https://www.gatsbyjs.com/gatsby-4/).
+> **Live demo:** [https://kannansuresh.github.io/chirping-astro](https://kannansuresh.github.io/chirping-astro)
 
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
+## Quick Start
 
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
+### Option 1: Astro CLI (recommended)
 
-## Features
-
-- A simple landing page with blog functionality built with Netlify CMS
-- Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
-- Create Blog posts from Netlify CMS
-- Tags: Separate page for posts under each tag
-- Basic directory organization
-- Uses Bulma for styling, but size is reduced by `gatsy-plugin-purgecss`
-- Blazing fast loading times thanks to pre-rendered HTML and automatic chunk loading of JS files
-- Uses `gatsby-plugin-image` with Netlify-CMS preview support
-- Separate components for everything
-- Netlify deploy configuration
-- Netlify function support, see `netlify/functions` folder
-- Perfect score on Lighthouse for SEO, Accessibility and Performance (wip:PWA)
-- ..and more
-
-## Prerequisites
-
-- Minimal Node.js version 14.15.0
-- [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/)
-- [Netlify CLI](https://github.com/netlify/cli)
-
-## Getting Started (Recommended)
-
-Netlify CMS can run in any frontend web environment, but the quickest way to try it out is by running it on a pre-configured starter site with Netlify. The example here is the Kaldi coffee company template (adapted from [One Click Hugo CMS](https://github.com/netlify-templates/one-click-hugo-cms)). Use the button below to build and deploy your own copy of the repository:
-
-<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/gatsby-starter-netlify-cms&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
-
-After clicking that button, you’ll authenticate with GitHub and choose a repository name. Netlify will then automatically create a repository in your GitHub account with a copy of the files from the template. Next, it will build and deploy the new site on Netlify, bringing you to the site dashboard when the build is complete. Next, you’ll need to set up Netlify’s Identity service to authorize users to log in to the CMS.
-
-### Access Locally
-
-Pulldown a local copy of the Github repository Netlify created for you, with the name you specified in the previous step
-
-```
-$ git clone https://github.com/[GITHUB_USERNAME]/[REPO_NAME].git
-$ cd [REPO_NAME]
-$ yarn
-$ netlify dev # or ntl dev
+```bash
+bunx create-astro@latest --template kannansuresh/chirping-astro-starter
 ```
 
-This uses [Netlify Dev](https://www.netlify.com/products/dev/?utm_source=blog&utm_medium=netlifycms&utm_campaign=devex) CLI feature to serve any functions you have in the `netlify/functions` folder.
+The wizard will prompt you for a project name, install dependencies, and initialize git.
 
-To test the CMS locally, you'll need to run a production build of the site:
+### Option 2: Clone directly
 
-```
-$ npm run build
-$ netlify dev # or ntl dev
-```
-
-### Media Libraries (installed, but optional)
-
-Media Libraries have been included in this starter as a default. If you are not planning to use `Uploadcare` or `Cloudinary` in your project, you **can** remove them from module import and registration in `src/cms/cms.js`. Here is an example of the lines to comment or remove them your project.
-
-```javascript
-import CMS from "netlify-cms-app";
-// import uploadcare from 'netlify-cms-media-library-uploadcare'
-// import cloudinary from 'netlify-cms-media-library-cloudinary'
-
-import AboutPagePreview from "./preview-templates/AboutPagePreview";
-import BlogPostPreview from "./preview-templates/BlogPostPreview";
-import ProductPagePreview from "./preview-templates/ProductPagePreview";
-import IndexPagePreview from "./preview-templates/IndexPagePreview";
-
-// CMS.registerMediaLibrary(uploadcare);
-// CMS.registerMediaLibrary(cloudinary);
-
-CMS.registerPreviewTemplate("index", IndexPagePreview);
-CMS.registerPreviewTemplate("about", AboutPagePreview);
-CMS.registerPreviewTemplate("products", ProductPagePreview);
-CMS.registerPreviewTemplate("blog", BlogPostPreview);
+```bash
+git clone https://github.com/kannansuresh/chirping-astro-starter.git my-blog
+cd my-blog
+bun install
 ```
 
-Note: Don't forget to also remove them from `package.json` and `yarn.lock` / `package-lock.json` using `yarn` or `npm`. During the build netlify-cms-app will bundle the media libraries as well, having them removed will save you build time.
-Example:
+### Start dev server
 
-```
-yarn remove netlify-cms-media-library-uploadcare
-```
-
-OR
-
-```
-yarn remove netlify-cms-media-library-cloudinary
+```bash
+bun dev
 ```
 
-## Getting Started (Without Netlify)
+Open [http://localhost:4321](http://localhost:4321) to see your site.
 
+## Configuration
+
+1. Edit `src/config.ts` to set your site title, author name, and social links.
+2. Copy `.env.example` to `.env` and fill in your values.
+3. Replace `src/assets/images/site/avatar.svg` with your own avatar.
+4. Replace `src/assets/images/site/favicon.svg` with your own favicon.
+5. Start writing posts in `src/content/posts/en/`.
+
+## Writing Posts
+
+Create a new `.md` or `.mdx` file in `src/content/posts/en/`:
+
+```markdown
+---
+title: 'My First Post'
+description: 'A short summary of this post.'
+pubDate: 2026-01-01
+tags: [hello, world]
+categories: [General]
+---
+
+Your content here...
 ```
-$ gatsby new [SITE_DIRECTORY_NAME] https://github.com/netlify-templates/gatsby-starter-netlify-cms/
-$ cd [SITE_DIRECTORY_NAME]
-$ npm run build
-$ npm run start
+
+See the included sample post for all available frontmatter fields.
+
+## Deploy to GitHub Pages
+
+The included `.github/workflows/deploy.yml` builds your site on every push to `main`.
+Deployment runs automatically once GitHub Pages is enabled for the repository.
+To set it up:
+
+### 1. Enable GitHub Pages
+
+Go to your repo **Settings → Pages → Source** and select **GitHub Actions**.
+
+> If Pages is not enabled yet, the workflow still builds but skips the deploy step.
+
+### 2. Set environment variables (optional)
+
+Go to **Settings → Environments → github-pages → Environment variables** and add any of:
+
+| Variable                    | Purpose                               | Default              |
+| --------------------------- | ------------------------------------- | -------------------- |
+| `SITE_URL`                  | Your production URL                   | Auto-detected        |
+| `BASE_PATH`                 | Sub-path for the site                 | Auto-detected        |
+| `PUBLIC_GITHUB_HANDLE`      | GitHub profile link in sidebar        | Your GitHub username |
+| `PUBLIC_TWITTER_HANDLE`     | Twitter/X link in sidebar             | _(none)_             |
+| `PUBLIC_CONTACT_EMAIL`      | Email link in sidebar                 | _(none)_             |
+| `PUBLIC_GISCUS_ENABLED`     | Enable comments (`true`/`false`)      | _(none)_             |
+| `PUBLIC_GISCUS_REPO`        | `owner/repo` for Giscus               | _(none)_             |
+| `PUBLIC_GISCUS_REPO_ID`     | From [giscus.app](https://giscus.app) | _(none)_             |
+| `PUBLIC_GISCUS_CATEGORY`    | Discussion category name              | _(none)_             |
+| `PUBLIC_GISCUS_CATEGORY_ID` | From [giscus.app](https://giscus.app) | _(none)_             |
+
+> **Note:** All variables are optional. The site builds and deploys with zero configuration — variables just enable extra features.
+
+### 3. Customize the Privacy Policy (optional)
+
+Edit the bilingual privacy policy templates:
+
+```text
+src/content/pages/en/privacy.md
+src/content/pages/fr/privacy.md
 ```
 
-### Setting up the CMS
+Replace placeholder values in `[BRACKETS]` (site name, contact email, etc.).
+The privacy policy appears in the footer with a link — disable it by setting
+`showPrivacyPolicy: false` in `src/config.ts`.
 
-Follow the [Netlify CMS Quick Start Guide](https://www.netlifycms.org/docs/quick-start/#authentication) to set up authentication, and hosting for production.
+### 4. Push to `main`
 
-If you want use Netlify CMS locally, run the site in one terminal with `npm run start` and in another
-Terminal you can use `npx netlify-cms-proxy-server` which proxy requests so you'll be automatically logged
-in as a user on [http:localhost:3000/admin](http:localhost:3000/admin).
+That's it. The workflow will build and deploy your site. Your site will be available at `https://<username>.github.io/<repo-name>/`.
 
-## Debugging
+### 5. Run (or re-run) the deploy workflow after enabling Pages
 
-Windows users, who aren't using [WSL](https://docs.microsoft.com/en-us/windows/wsl/about), might encounter `node-gyp` errors when trying to npm install.
-To resolve, make sure that you have both Python 2.7 and the Visual C++ build environment installed.
+If your first workflow run happened before step 1, deploy was skipped by design.
+After enabling Pages, trigger deployment with either option:
 
+1. Push any new commit to `main`.
+2. Or go to **Actions → Deploy to GitHub Pages → Run workflow**.
+
+The next run will execute the deploy job and publish your site.
+
+## Custom Domain
+
+### Dedicated domain for this site
+
+To use your own domain (e.g., `https://blog.example.com`) exclusively for this site:
+
+1. Configure your DNS and repository settings — see [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
+2. The workflow automatically detects custom domains and configures `SITE_URL` and `BASE_PATH` correctly. **No manual configuration is needed at all** — it works out of the box!
+
+### Using a custom domain on your GitHub user site
+
+If your GitHub user site (`<username>.github.io`) already points to a custom domain (e.g., `example.com`), then **all project sites** under that account are automatically served under that domain:
+
+```text
+username.github.io        → example.com          (user site)
+username.github.io/blog   → example.com/blog     (this repo)
 ```
-npm config set python python2.7
-npm install --global --production windows-build-tools
-```
 
-[Full details here](https://www.npmjs.com/package/node-gyp "NPM node-gyp page").
+In this case, you don't need any extra DNS setup. The workflow detects the origin (`example.com`) and path (`/blog`) and configures it automatically!
 
-MacOS and WSL users who might also encounter some errors, check [node-gyp](https://github.com/nodejs/node-gyp) for more info. We recommend using the latest stable node version.
+## Giscus Comments
 
-## Purgecss
+To enable GitHub Discussions-powered comments on posts:
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma builds are usually ~170K but reduced 90% by purgecss.
+1. Install the [Giscus app](https://github.com/apps/giscus) on your repo.
+2. Go to [giscus.app](https://giscus.app), fill in your repo details, and copy the generated values.
+3. Add these environment variables in **Settings → Environments → github-pages**:
+   - `PUBLIC_GISCUS_ENABLED` = `true`
+   - `PUBLIC_GISCUS_REPO` = `your-username/your-repo`
+   - `PUBLIC_GISCUS_REPO_ID` = _(from giscus.app)_
+   - `PUBLIC_GISCUS_CATEGORY` = `Announcements` _(or your chosen category)_
+   - `PUBLIC_GISCUS_CATEGORY_ID` = _(from giscus.app)_
 
-# CONTRIBUTING
+## Single Language Mode
 
-Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+This starter ships with English + French (i18n). To run a single-language site:
+
+1. Open `src/config.ts` and set `multilingual: false`.
+2. Delete the `src/content/posts/fr/` folder (and `src/content/pages/fr/` if present).
+3. Remove the `src/pages/fr/` directory.
+
+The language switcher will disappear and all `hreflang` tags are omitted.
+
+## Customization
+
+| What                            | Where                                   |
+| ------------------------------- | --------------------------------------- |
+| Site title, description, author | `src/config.ts` → `SITE`                |
+| Navigation links                | `src/config.ts` → `NAV`                 |
+| Social links                    | `src/config.ts` → `SOCIAL`              |
+| Avatar image                    | `src/assets/images/site/avatar.svg`     |
+| Favicon                         | `src/assets/images/site/favicon.svg`    |
+| Default OG image                | `src/assets/images/site/og-default.svg` |
+| Global styles                   | `src/styles/global.css`                 |
+| Theme colors                    | daisyUI theme tokens in `global.css`    |
+
+## Commands
+
+| Command          | Action                               |
+| ---------------- | ------------------------------------ |
+| `bun dev`        | Start dev server at `localhost:4321` |
+| `bun run build`  | Build production site to `./dist/`   |
+| `bun preview`    | Preview production build locally     |
+| `bun run lint`   | Run ESLint                           |
+| `bun run format` | Format with Prettier                 |
+
+## Documentation
+
+For full documentation on all features (i18n, dark mode, math, comments, OG images, etc.), see the [main repository README](https://github.com/kannansuresh/chirping-astro#readme).
+
+## Contributing & Issues
+
+> **This starter repository is automatically synced from the [main Chirping Astro repository](https://github.com/kannansuresh/chirping-astro).** Please do not open pull requests here — changes will be overwritten on the next sync.
+
+- **Found a bug?** [Open an issue](https://github.com/kannansuresh/chirping-astro/issues) on the main repository.
+- **Want to contribute?** See the [contributing guide](https://github.com/kannansuresh/chirping-astro/blob/main/CONTRIBUTING.md) on the main repository.
+- **Have a question?** Use [Discussions](https://github.com/kannansuresh/chirping-astro/discussions) on the main repository.
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
