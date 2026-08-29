@@ -12,6 +12,8 @@ export const SITE: SiteConfig = {
   },
   postsPerPage: 8,
   multilingual: false,
+  locales: ['en'], // English-only
+  defaultLocale: 'en',
   autoOgImage: true,
   showFeaturedImages: true,
   footer: {
