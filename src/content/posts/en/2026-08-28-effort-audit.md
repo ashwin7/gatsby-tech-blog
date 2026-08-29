@@ -26,6 +26,6 @@ This creates this weird trap in education and fitness. Are we assigning essays t
 
 We keep focusing on absolute outcomes when we're actually trying to improve relative effort. It's like giving a trophy to the natural athlete who barely tries, while the kid who showed up every day and genuinely pushed themselves gets a participation ribbon.
 
-Sahil Lavingia, the Gumroad founder, tweeted something that clicked for me: "What you work on defines you, not how hard you work." Effort is essential when you're developing skills — no one becomes good at anything without putting in the hours. But when you step into the marketplace? That's a whole different game.
+Sahil Lavingia, the Gumroad founder, tweeted something that clicked for me: "What you work on defines you, not how hard you work." Effort is essential when you're developing skills no one becomes good at anything without putting in the hours. But when you step into the marketplace? That's a whole different game.
 
 We're running two separate systems here and pretending they're the same. One rewards sweat and persistence. The other rewards what people actually want to buy. Maybe we should be clearer about which game we're playing at any given moment.
