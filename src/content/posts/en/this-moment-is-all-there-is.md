@@ -1,7 +1,7 @@
 ---
 title: 'This Moment Is All There Is'
 description: 'Entry for 07-September-2024 - on the tension between living in the present and building for the future.'
-pubDate: 2026-08-29
+pubDate: 2024-09-07
 categories: [Life]
 heroImage: './images/life-updates/mind.png'
 ---
