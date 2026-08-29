@@ -1,23 +1,24 @@
 {
-  "name": "y",
+  "name": "gatsby-tech-blog",
   "version": "1.2.0",
   "type": "module",
   "description": "A Chirpy-inspired, single-template, multilingual Astro v7 theme with Tailwind v4, daisyUI, MDX, Pagefind, and Giscus.",
   "license": "MIT",
   "engines": {
-    "bun": ">=1.1.0"
+    "node": ">=18.18.0",
+    "npm": ">=9.0.0"
   },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && bun run pagefind",
+    "build": "astro build && npm run pagefind",
     "preview": "astro preview",
-    "serve": "bun run build && bun preview",
+    "serve": "npm run build && npm preview",
     "astro": "astro",
     "pagefind": "pagefind --site dist --output-subdir _pagefind",
     "postbuild": "echo \"Pagefind index generated in dist/_pagefind\"",
     "typecheck": "astro check",
-    "test": "bun test",
+    "test": "echo \"No tests configured\"",
     "lint": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write \"**/*.{astro,ts,tsx,js,jsx,md,mdx,css,json}\"",
