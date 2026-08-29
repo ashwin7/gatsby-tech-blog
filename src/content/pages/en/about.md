@@ -8,7 +8,7 @@ translationKey: about
 
 ## Who I am
 
-My name is Ashwin Saxena. I'm a software engineer based in <!-- PLACEHOLDER: Add city/country -->.
+My name is Ashwin Saxena. I'm a software engineer based in Maharashtra.
 
 I write about life, movies, books, personal finance, and the things I'm learning along the way. This blog is where I document my thoughts, experiences, and reflections — everything from movie reviews to career updates to philosophical musings.
 
@@ -22,14 +22,14 @@ This blog is a mix of personal reflections, movie reviews, life updates, and occ
 Some recurring themes:
 - **Life reflections** — on moving on, direction, belief, and lessons learned
 - **Movies & entertainment** — reviews and thoughts on films I watch
-- **Career & tech** — updates on my journey from individual contributor to technical manager
+- **Career & tech** — updates on my journey and experiences
 - **Personal finance** — practical tips and reflections on money
 - **Philosophy & mindset** — concepts like *shikata ga nai* and why we believe what we believe
 
 ## Work
 
 <!-- PLACEHOLDER: Describe your professional background — your current role, what you work on, your area of expertise, and any career highlights or transitions (like your move to technical management). -->
-I'm currently a Technical Manager. Previously, I worked as an individual contributor and tech lead.
+I'm currently a software engineer. Previously, I worked as an individual contributor and tech lead.
 
 ## Find me online
 
